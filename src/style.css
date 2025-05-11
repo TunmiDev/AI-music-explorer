@@ -1,0 +1,81 @@
+body {
+  background-color: #f9f7fe;
+  font-family: "Courier New", Courier, monospace;
+}
+.container {
+  margin: 120px auto;
+  max-width: 600px;
+}
+header {
+  margin-bottom: 30px;
+}
+h1 {
+  text-align: center;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 1.5;
+  color: #272044;
+}
+a {
+  color: #9370db;
+}
+.form-container {
+  background-color: #fff;
+  margin-bottom: 30px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
+}
+.hint {
+  line-height: 1.5;
+  font-size: 12px;
+  margin-top: 5px;
+  opacity: 0.6;
+}
+form {
+  display: flex;
+}
+.prompt {
+  padding: 16px;
+  border: 1px solid rgba(39, 33, 66, 0.5);
+  width: 88%;
+  font-size: 16px;
+  border-radius: 50px;
+  line-height: 28px;
+  color: #272044;
+}
+.btn {
+  margin-left: 10px;
+  background: #c8a2c8;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 30px;
+  width: 150px;
+  font-size: 16px;
+}
+.song {
+  font-size: 16px;
+  background-color: #fff;
+  padding: 20px;
+  line-height: 2;
+  border-left: 6px solid #c8a2c8;
+  box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
+}
+.hidden {
+  display: none;
+}
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+footer {
+  text-align: center;
+  font-size: 13px;
+  margin-top: 30px;
+}
