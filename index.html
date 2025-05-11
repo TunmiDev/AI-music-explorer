@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Music Explorer</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>AI Music Explorer.</h1>
+      </header>
+      <main>
+        <div class="form-container">
+          <form id="music-generator-form">
+            <input
+              type="text"
+              class="prompt"
+              placeholder="Search for songs by keyword "
+              autofocus
+              required
+              autocomplete="off"
+              id="user-prompt"
+            />
+            <input type="submit" class="btn" />
+          </form>
+          <div class="hint">i.e love, night, dream, summer</div>
+        </div>
+        <div class="song hidden" id="song"></div>
+      </main>
+      <script src="src/index.js"></script>
+      <footer>
+        This AI project is coded by TunmiDev and is
+        <a href="https://github.com/TunmiDev/poem-generator" target="_blank"
+          >open-source on Github.</a
+        >
+        and is hosted
+        <a href="https://poem-generator-psi.vercel.app/">on Vercel.</a>
+      </footer>
+    </div>
+  </body>
+</html>
