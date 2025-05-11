@@ -32,6 +32,14 @@
         </div>
         <div class="song hidden" id="song"></div>
       </main>
+      <script>
+        fetch("/api/token")
+          .then((res) => res.json())
+          .then((data) => {
+            console.log("Access token:", data.token);
+            // Now use token to call Spotify APIs
+          });
+      </script>
       <script src="src/index.js"></script>
       <footer>
         This AI project is coded by TunmiDev and is
